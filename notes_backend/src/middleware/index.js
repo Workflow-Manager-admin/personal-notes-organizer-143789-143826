@@ -1,4 +1,7 @@
-// This file will export middleware as the application grows
+const { authenticateToken } = require('./auth');
+const { validateNote } = require('./validators');
+
 module.exports = {
-  // Add your middleware here
+  authenticateToken,
+  validateNote,
 };
